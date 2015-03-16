@@ -1,0 +1,21 @@
+{
+  "name": "alpaca/triggers-unserializer",
+  "version": "0.1",
+  "description": "Decoder class for specific serialization format produced by my-op-logger triggers",
+  "license": "MIT",
+  "require-dev": {
+    "phpunit/phpunit": "4.5.*"
+  },
+  "authors": [
+    {
+      "name": "alpaca",
+      "email": "alpacagm@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "alpaca\\TriggersUnserializer\\": "src/",
+      "alpaca\\TriggersUnserializer\\test\\": "test/"
+    }
+  }
+}
