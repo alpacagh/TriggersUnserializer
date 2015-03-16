@@ -8,7 +8,6 @@
 namespace alpaca\TriggersUnserializer\test;
 
 use alpaca\TriggersUnserializer\TriggerUnserializer;
-use Doctrine\Instantiator\Exception\InvalidArgumentException;
 
 class TriggerUnserializerTest extends \PHPUnit_Framework_TestCase {
     public function testSimple()
@@ -45,6 +44,6 @@ class TriggerUnserializerTest extends \PHPUnit_Framework_TestCase {
     {
         $encoded = 'id:52,val:~,sval:9:qweekjh,fval:3.14159';
         self::setExpectedException('UnexpectedValueException');
-        print_r(TriggerUnserializer::Decode($encoded));
+        TriggerUnserializer::Decode($encoded);
     }
 }
